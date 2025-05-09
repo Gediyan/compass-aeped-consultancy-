@@ -2,29 +2,51 @@
 <html>
     <head>
         <title>Compass AEPED</title>
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo">
+                  <h1>Compass AEPED</h1>
+                </div>
+                
+                <nav class="main-nav">
+                  <ul class="nav-list">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="team.html">Team</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="test.html">Test</a></li>
-                    <button>Get in Touch</button>
-                </ul>
-            </nav>
-            <h1>Services</h1>
+                    <li class="cta-button"><a href="contact.html">Get in Touch</a></li>
+                  </ul>
+                  <button class="mobile-menu-toggle">☰</button>
+                </nav>
+            </div>
         </header>
+        <section class="services-detail">
+          <h1>Services</h1>
+        </section>
         <section>
             <div>aaaa</div>
             <div>b</div>
             <div>c</div>
         </section>
         <section>lower-section</section>
-        <footer>footer</footer>
+        
+        <div id="footer-container"></div>
+
+        <script>
+            fetch('/footer.html')
+              .then(response => response.text())
+              .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+              });
+          </script>
+        <!-- Add this in your head section or before the closing body tag -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!-- At the bottom of your HTML, before </body> -->
+        <script src="../scripts.js"></script>
     </body>
 </html>

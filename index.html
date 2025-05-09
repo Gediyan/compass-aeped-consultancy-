@@ -2,22 +2,31 @@
 <html>
     <head>
         <title>Compass AEPED</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header>
-            <nav class="feature-box page-buttons">
-                <ul>
-                    <!-- <li class="logo"><a href="../index.html"></a></li> -->
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo">
+                  <h1>Compass AEPED</h1>
+                </div>
+                
+                <nav class="main-nav">
+                  <ul class="nav-list">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="pages/about.html">About</a></li>
                     <li><a href="pages/services.html">Services</a></li>
+                    <li><a href="pages/projects.html">Projects</a></li>
                     <li><a href="pages/team.html">Team</a></li>
                     <li><a href="pages/contact.html">Contact</a></li>
-                    <li><a href="pages/test.html">Test</a></li>
-                    <button>Get in Touch</button>
-                </ul>
-            </nav>
+                    <li class="cta-button"><a href="pages/contact.html">Get in Touch</a></li>
+                  </ul>
+                  <button class="mobile-menu-toggle">☰</button>
+                </nav>
+            </div>
+        </header>
+        <!-- Welcome-section -->
+        <section class="compass-wellcome">
             <div class="header-container">
                 <!-- Logo positioned above background image -->
                 <div class="logo-wrapper">
@@ -78,7 +87,7 @@
                 <!-- <h1>Compass AEPED Consultancy</h1> -->
                 <div class="text-content">
                     <h1>Compass AEPED Consultancy</h1>
-                    <h3 class="intro-text">
+                    <h3 class="wellcome-intro-text">
                         Compass AEPED is an established urban and regional planning 
                         consultancy with over 15 years of expertise in the field of planning 
                         and development. Headquartered in Addis Ababa, we
@@ -93,8 +102,35 @@
                     <button class="read-more-btn">Read More</button>
                 </div>
             </div>
-        </header>
-        <section>lower-section</section>
+        </section>
+        <section class="status-section">
+            <div class="stats-container">
+                <div class="stat-item">
+                  <div class="counter-wrapper">
+                    <span class="counter" data-target="250">0</span><span class="plus-sign">+</span>
+                  </div>
+                  <p>Projects</p>
+                </div>
+                <div class="stat-item">
+                  <div class="counter-wrapper">
+                    <span class="counter" data-target="100">0</span><span class="plus-sign">+</span>
+                  </div>
+                  <p>Steady State & Dynamic Simulation</p>
+                </div>
+                <div class="stat-item">
+                  <div class="counter-wrapper">
+                    <span class="counter" data-target="50">0</span><span class="plus-sign">+</span>
+                  </div>
+                  <p>Detailed Engineering</p>
+                </div>
+                <div class="stat-item">
+                  <div class="counter-wrapper">
+                    <span class="counter" data-target="12">0</span><span class="plus-sign">+</span>
+                  </div>
+                  <p>Countries Served</p>
+                </div>
+              </div>
+        </section>
         <section>
             <div class="service-intro-container">
                 <h1 class="service-intro">Our Services</h1>
@@ -122,86 +158,60 @@
                             <li>Construction Management</li>
                         </ul>
                     </section>
+                    <section class="service-card">
+                        <h1 class="socio-economic-intro">SOCIOECONOMIC DEVELOPMENT & PLANNING</h1>
+                        <ul class="intro-socio-economic-description">
+                            <li>Housing Development Studies</li>
+                            <li>Market Analysis & Feasibility Studies</li>
+                            <li>Social & Economic Impact Assessments</li>
+                            <li>Land Property Valuation</li>
+                        </ul>
+                    </section>
+                    <section class="service-card">
+                        <h1 class="environmental-planning-intro">ENVIRONMENTAL PLANNING & SUSTAINABILITY</h1>
+                        <ul class="intro-environmental-planning-description">
+                            <li>Environmental Impact Assessments (EIAs)</li>
+                            <li>Sustainable Design & Planning</li>
+                        </ul>
+                    </section>
+                    <section class="service-card">
+                        <h1 class="infrastructure-planning-intro">INFRASTRUCTURE PLANNING</h1>
+                        <ul class="intro-infrastructure-planning-description">
+                            <li>Infrastructure Asset Planning</li>
+                            <li>Transportation Planning</li>
+                            <li>Utility Systems Planning </li>
+                            <li>Site Development Planning</li>
+                        </ul>
+                    </section>
+                    <section class="service-card">
+                        <h1 class="capacity-building-intro">CAPACITY BUILDING & TRAINING</h1>
+                        <ul class="intro-capacity-building-description">
+                            <li>Technical Assistance</li>
+                            <li>Training</li>
+                        </ul>
+                    </section>
+                    <section class="service-card">
+                        <h1 class="geospatial-service-intro">GEOSPATIAL SERVICES</h1>
+                        <ul class="intro-geospatial-service-description">
+                            <li>Street Addressing</li>
+                            <li>Base Map</li>
+                        </ul>
+                    </section>
                 </div>
             </div>
         </section>
-        <footer class="site-footer">
-            <div class="footer-container">
-                <!-- About Section -->
-                <div class="footer-section">
-                    <h3 class="footer-heading">About Compass AEPED</h3>
-                    <p class="footer-about">We are a leading urban planning and architectural consultancy based in Addis Ababa, Ethiopia, with over 15 years of experience in creating sustainable urban environments.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-        
-                <!-- Quick Links -->
-                <div class="footer-section">
-                    <h3 class="footer-heading">Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-        
-                <!-- Services -->
-                <div class="footer-section">
-                    <h3 class="footer-heading">Our Services</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Urban Planning</a></li>
-                        <li><a href="#">Architectural Design</a></li>
-                        <li><a href="#">Engineering Design</a></li>
-                        <li><a href="#">Construction Management</a></li>
-                        <li><a href="#">Landscape Design</a></li>
-                        <li><a href="#">Policy Research</a></li>
-                    </ul>
-                </div>
-        
-                <!-- Contact Info -->
-                <div class="footer-section">
-                    <h3 class="footer-heading">Contact Us</h3>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> Bole Road, Addis Ababa, Ethiopia</li>
-                        <li><i class="fas fa-phone"></i> +251 123 456 789</li>
-                        <li><i class="fas fa-envelope"></i> info@compassaeped.com</li>
-                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:30AM - 5:30PM</li>
-                    </ul>
-                </div>
-            </div>
-        
-            <!-- Copyright -->
-            <div class="copyright">
-                <p>&copy; 2023 Compass AEPED Consultancy. All Rights Reserved.</p>
-                <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Sitemap</a>
-                </div>
-            </div>
-        </footer>
+        <div id="footer-container"></div>
+
+        <script>
+            fetch('/footer.html')
+              .then(response => response.text())
+              .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+              });
+          </script>
+        <!-- Add this in your head section or before the closing body tag -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!-- At the bottom of your HTML, before </body> -->
+        <script src="scripts.js"></script>
     </body>
 </html>
-
-
-<script>
-    document.querySelector('.read-more-btn').addEventListener('click', function() {
-        const moreText = document.querySelector('.more-text');
-        const btn = document.querySelector('.read-more-btn');
-        
-        if (moreText.style.display === 'none') {
-            moreText.style.display = 'inline';
-            btn.textContent = 'Read Less';
-        } else {
-            moreText.style.display = 'none';
-            btn.textContent = 'Read More';
-        }
-    });
-</script>
