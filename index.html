@@ -2,15 +2,21 @@
 <html>
     <head>
         <title>Compass AEPED</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
+            <figure class="logo-fig">
+                <img class="logo-png" src="images/logo-700px-01.png" alt="compass-aeped-logo">
+            </figure>
+            <div class="company-title">
+                <h1>Compass AEPED</h1>
+            </div>
             <div class="header-content">
-                <div class="logo">
-                  <h1>Compass AEPED</h1>
-                </div>
-                
+
                 <nav class="main-nav">
                   <ul class="nav-list">
                     <li><a href="../index.html">Home</a></li>
@@ -21,13 +27,37 @@
                     <li><a href="pages/contact.html">Contact</a></li>
                     <li class="cta-button"><a href="pages/contact.html">Get in Touch</a></li>
                   </ul>
-                  <button class="mobile-menu-toggle">☰</button>
                 </nav>
             </div>
+                
+            <button class="mobile-menu-toggle">☰</button>
+            <div class="profile-icon" id="profileIcon">
+                <!-- Will be populated by JavaScript -->
+            </div>
         </header>
+        <!-- Navigation Drawer -->
+        <div class="drawer-overlay" id="drawerOverlay"></div>
+        <nav class="navigation-drawer" id="navigationDrawer">
+            <div class="drawer-profile">
+                <div class="drawer-profile-icon" id="drawerProfileIcon">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+                <div class="drawer-profile-info">
+                    <span id="drawerUserName">Guest</span>
+                    <span id="drawerUserEmail"></span>
+                </div>
+            </div>
+            <ul class="drawer-menu">
+                <li><a href="#"><i class="material-icons">home</i> Home</a></li>
+                <li><a href="#"><i class="material-icons">settings</i> Settings</a></li>
+                <li><a href="#"><i class="material-icons">favorite</i> Favorites</a></li>
+                <li class="divider"></li>
+                <li><a href="pages/signin.html" id="accountAction"><i class="material-icons">account_circle</i> Sign In</a></li>
+            </ul>
+        </nav>
         <!-- Welcome-section -->
         <section class="compass-wellcome">
-            <div class="header-container">
+            <div class="wellcome-container">
                 <!-- Logo positioned above background image -->
                 <div class="logo-wrapper">
                     <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 163.5 137.98">
@@ -209,6 +239,7 @@
                 document.getElementById('footer-container').innerHTML = html;
               });
           </script>
+
         <!-- Add this in your head section or before the closing body tag -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <!-- At the bottom of your HTML, before </body> -->
